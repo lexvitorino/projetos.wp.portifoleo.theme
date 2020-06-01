@@ -3,10 +3,32 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <?php wp_head(); ?>
+    <style type="text/css">
+        .header {
+            background: <?php echo get_theme_mod('ap_color_theme_menu') ?>;
+            border-top: 10px solid <?php echo get_theme_mod('ap_color_theme_header') ?>;
+        }
+
+        a.btn-cta-primary,
+        .btn-cta-primary {
+            background: <?php echo get_theme_mod('ap_color_theme_btn_contact') ?>;
+            border: 1px solid <?php echo get_theme_mod('ap_color_theme_btn_contact') ?>;
+        }
+
+        body {
+            background: <?php echo get_theme_mod('ap_color_theme_body') ?>;
+        }
+
+        a.btn-cta-secondary,
+        .btn-cta-secondary {
+            background: <?php echo get_theme_mod('ap_last_project_btn_color') ?>;
+            border: 1px solid <?php echo get_theme_mod('ap_last_project_btn_color') ?>;
+        }
+    </style>
 </head>
 
-<?php 
-$url = get_theme_mod('ap_foto'); 
+<?php
+$url = get_theme_mod('ap_foto');
 $url = wp_get_attachment_image_src($url);
 $name = get_theme_mod('ap_name');
 $option_work = get_theme_mod('ap_option_work');

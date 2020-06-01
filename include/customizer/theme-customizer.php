@@ -3,6 +3,7 @@ require get_template_directory() . '/include/customizer/social.php';
 require get_template_directory() . '/include/customizer/basic-information.php';
 require get_template_directory() . '/include/customizer/testimonials.php';
 require get_template_directory() . '/include/customizer/last_project.php';
+require get_template_directory() . '/include/customizer/color_theme.php';
 
 function ap_customize_register($wp_customize)
 {
@@ -15,4 +16,5 @@ function ap_customize_register($wp_customize)
     ap_basic_information($wp_customize);
     ap_testimonials($wp_customize);
     ap_last_project($wp_customize);
+    ap_color_theme_customizer($wp_customize);
 }

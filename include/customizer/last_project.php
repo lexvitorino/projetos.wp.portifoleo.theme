@@ -7,6 +7,7 @@ function ap_last_project($wp_customize)
     $wp_customize->add_setting('ap_last_project_title', array('default' => ''));
     $wp_customize->add_setting('ap_last_project_comment', array('default' => ''));
     $wp_customize->add_setting('ap_last_project_btn_title', array('default' => ''));
+    $wp_customize->add_setting('ap_last_project_btn_color', array('default' => '#479FC8'));
     $wp_customize->add_setting('ap_last_project_link', array('default' => ''));
 
     // Sections
@@ -69,10 +70,21 @@ function ap_last_project($wp_customize)
             $wp_customize,
             'ap_last_project_btn_title',
             array(
-                'label' => 'Botão',
+                'label' => 'Texto ( Botão )',
                 'section' => 'ap_mi7dev_last_project',
                 'settings' => 'ap_last_project_btn_title',
                 'type' => 'text'
+            )
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'ap_last_project_btn_color',
+            array(
+                'label' => 'Cor ( Botão )',
+                'section' => 'ap_mi7dev_last_project',
+                'settings' => 'ap_last_project_btn_color'
             )
         )
     );

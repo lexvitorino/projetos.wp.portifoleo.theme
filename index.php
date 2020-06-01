@@ -5,6 +5,7 @@ $who_are = get_theme_mod('ap_who_are');
 $location = get_theme_mod('ap_location');
 $primary_email = get_theme_mod('ap_primary_email');
 $link_site = get_theme_mod('ap_link_site');
+
 ?>
 
 <div class="container sections-wrapper">
