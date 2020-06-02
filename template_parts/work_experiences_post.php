@@ -7,7 +7,7 @@ $ap_work_experiences_company = !empty($ap_work_experiences_company) ? $ap_work_e
 $ap_work_experiences_start = !empty($ap_work_experiences_start) ? $ap_work_experiences_start : 0;
 $ap_work_experiences_stop = !empty($ap_work_experiences_stop) ? $ap_work_experiences_stop : 0;
 
-$linkSite = !empty($ap_work_experiences_site) ? '<a href="'.  $ap_work_experiences_site . '>' . $ap_work_experiences_company . '</a>' : $ap_work_experiences_company;
+$linkSite = !empty($ap_work_experiences_site) ?  '<a href="'.  $ap_work_experiences_site . '">' . $ap_work_experiences_company . '</a>' : $ap_work_experiences_company;
 ?>
 
 <div class="item">
